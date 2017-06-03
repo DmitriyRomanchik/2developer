@@ -1,0 +1,266 @@
+@-webkit-keyframes myanim {
+	0%{margin-left: 20px;}
+	25%{-webkit-transform: rotateZ(-20deg);}
+	50%{margin-left: 300px;}
+	100%{margin-left: 20px;}
+}
+
+
+/*Основные настройки*/
+body{
+	font-family: Arial, Tahoma;
+	text-align: justify;
+	background: #c1c1c1 url(images/bg.png) bottom center no-repeat;
+	background-attachment: fixed;
+	background-size: 1150px 200px;
+	margin: 0px;
+	font-size: 14px;
+
+}
+/*Таблица*/
+#table{
+	box-shadow: 0px 0px 10px black;
+}
+/*Картинка facebook*/
+.facebook{
+	position: fixed;
+	top: 45%;
+	left:-20px;
+	-webkit-transition: left 0.3s linear;
+}
+.facebook:hover{
+	left: 0px;
+	cursor: pointer;
+}
+/*Шапка сайта*/
+#header{
+	background: url(images/header.png) top center repeat-x;
+	height: 102px;
+}
+.logo{
+	background: url(images/logo.png) top center no-repeat;
+	display: block;
+	width: 225px;
+	height: 84px;
+	margin-left: 20px;
+	-webkit-animation:myanim 3s;
+}
+/*Картинка youtube*/
+.youtube{
+	background: url(images/yt.png) top center no-repeat;
+	display: block;
+	width: 40px;
+	height: 89px;
+	position: relative;
+	left: 773px;
+	bottom: 85px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s linear;
+}
+.youtube:hover{
+	-webkit-transform: rotateZ(90deg);
+	
+}
+/*Верхнее меню сайта*/
+#menu{
+	background: #000;
+	height: 31px;
+	
+}
+#menu a{
+	color: white;
+	text-decoration: none;
+	margin: 0px 30px;
+}
+#menu a:hover{
+	color: yellow;
+	
+}
+/*Блок контента*/
+#content{
+	background: white;
+	height: 400px;
+	vertical-align: top;
+	padding: 40px 0;
+}
+/*Новости*/
+.news{
+	width: 675px;
+}
+.news img{
+	border-radius: 7px;
+	box-shadow: 4px 4px 5px black;
+	opacity: 0.6;
+	-webkit-transition: opacity 0.3s linear;
+}
+.news img:hover{
+	opacity: 1;
+}
+.news a{
+	color: red;
+	text-decoration: none;
+	font-family: Tahoma, Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.news a:hover{
+	text-decoration: underline;
+}
+.news-title, .read-more {
+	padding-left: 10px;
+	text-shadow: 2px 2px 10px grey;
+}
+.news-text{
+	margin: 10px 0px 10px 10px;
+	text-indent: 10px;
+}
+.read-more a{ 
+	font-size: 14px!important;
+	font-weight: normal;
+}
+.read-more a:hover {
+	font-weight: bold;
+}
+.news-line{ 
+    color: 	#8B0000;
+	margin: 20px 0px;
+	text-align: center;
+}
+/*Концерты*/
+#koncerti{
+	width: 90%;
+	height: 350px;
+
+}
+#koncerti td{
+	width: 20%;
+	text-align: center;
+	border-right: 1px solid white ;
+}
+#koncerti tr:nth-child(odd){
+	background: #778899;
+	-webkit-transition: background 0.3s linear;
+}
+#koncerti tr:nth-child(even){
+	background: #00FA9A;
+	-webkit-transition: background 0.3s linear;
+}
+#koncerti tr:nth-child(odd):hover{
+	background: #008080;
+	color:wheat;
+	cursor: pointer;
+}
+#koncerti tr:nth-child(even):hover {
+	background: grey;
+	color: wheat;
+	cursor: pointer;
+}
+
+#koncerti tr:first-child{
+	background: -webkit-linear-gradient(10deg, #a82f1e 10%, #7e1a0c 80%);
+	font-weight:bold;
+	color: #dfd312;
+}
+
+#koncerti tr:first-child:hover{
+	background: -webkit-linear-gradient(10deg, #a82f1e 10%, #7e1a0c 80%);
+	color: #dfd312;
+	cursor:default;
+}
+
+#koncerti tr:first-child td{
+	border-radius:10px 10px 0 0;
+}
+/*Формы*/
+#my-form{
+	margin:0 0 0 50px;
+}
+#my-form input, #my-form label{
+	display: block;
+}
+#my-form label{
+	font-size: 14px;
+	padding-left: 1px;
+}
+#my-form textarea{
+	resize: none;
+}
+#my-form input[type=text]:focus{
+	background: #A0522D;
+	border-right: 2px solid yellow;
+	color: whitesmoke;
+}
+#my-form input[type=submit]{
+	border: 0;
+	background: -webkit-linear-gradient(10deg, #117909 10%, #063502 80%);
+	border-radius: 3px;
+	padding: 5px;
+	color: white;
+}
+#my-form input[type=submit]:hover{
+	color: yellowgreen;
+}
+
+
+
+/*Текста*/
+#texta{
+	width: 60%;
+	height: 350px;
+	box-shadow: 5px 5px 15px black;
+}
+#texta td {
+	width: 20%;
+	text-align: center;
+	border-top: 1px solid green;
+	background: -webkit-linear-gradient(10deg, #C0C0C0 10%,	#D2B48C 80%);
+	border-radius: 5px;
+	text-shadow: 2px 2px 10px black;
+}
+#texta a {
+	color: #800000;
+	text-decoration: none;
+}
+#texta a:hover{
+	color: #063502;
+	font-size: 20px;
+}
+
+
+
+
+
+/*Футер*/
+#footer{
+	background: url(images/footer.png) top center;
+	height: 140px;
+	
+}
+.footer-block{
+	float: left;
+}
+.footer-block a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	margin: 7px 80px;
+}
+.footer-block a:hover {
+	color: yellow;
+}
+.footer-line{
+	background: url(images/footer-line.png) top center repeat-y;
+	height: 100px;
+	width: 1px;
+	float: left;	
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
